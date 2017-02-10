@@ -2,6 +2,17 @@
 
 ##(1) 將資料庫連結物件寫在模組中
 
+#####執行環境:
+```
+本程式在Node.js環境下執行,
+(1) 先安裝MySQL:
+    npm install mysql
+   
+(2) 再執行程式:
+    node test.js
+```
+
+
 #####檔案放置方式:
 ```
    |___test.js
@@ -50,6 +61,17 @@ module.exports = connection;
 
 
 ##(2) 將資料庫連結池寫在模組中
+
+#####執行環境:
+```
+本程式在Node.js環境下執行,
+(1) 先安裝MySQL:
+    npm install mysql
+   
+(2) 再執行程式:
+    node test.js
+```
+
 
 #####檔案放置方式:
 ```
