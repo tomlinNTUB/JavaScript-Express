@@ -4,7 +4,8 @@
 
 #####執行環境:
 ```
-本程式在Node.js環境下執行,
+本程式在Node.js環境下執行
+----------------------------
 (1) 先安裝MySQL:
     npm install mysql
    
@@ -64,7 +65,8 @@ module.exports = connection;
 
 #####執行環境:
 ```
-本程式在Node.js環境下執行,
+本程式在Node.js環境下執行
+----------------------------
 (1) 先安裝MySQL:
     npm install mysql
    
