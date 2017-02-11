@@ -120,3 +120,57 @@ var pool  = mysql.createPool({
 //----------------------------
 module.exports = pool;
 ```
+
+
+
+##(3) 匯出包含函式的物件
+
+#####執行環境:
+```
+本程式在Node.js環境下執行
+----------------------------
+node test.js
+```
+
+
+#####檔案放置方式:
+```
+   |___test.js
+   |___counter.js    
+```
+
+
+#####檔案名稱: test.js
+```js
+//---------------------------------------
+// 透過require引用counter.js的匯出物件
+//---------------------------------------
+var counter = require('./counter.js');
+
+console.log(counter.add());
+console.log(counter.add());
+console.log(counter.add());
+```
+
+
+#####檔案名稱: counter.js
+```js
+//-----------------------------
+// cnt將由引用模組的程式共用
+//-----------------------------
+var cnt=0;
+
+//----------------------------
+// 模組匯出包含函式的物件
+//----------------------------
+module.exports = {
+    add:function(){
+        cnt++;
+        return cnt;
+    },
+	
+    reset:function(){
+        cnt=0;
+    }
+};
+```
