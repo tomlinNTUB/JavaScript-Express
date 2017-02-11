@@ -174,3 +174,55 @@ module.exports = {
     }
 };
 ```
+
+
+
+##(4) 作為廣域變數
+
+
+#####執行環境:
+```
+本程式在Node.js環境下執行
+----------------------------
+node test.js
+```
+
+
+#####檔案放置方式:
+```
+   |___test.js
+   |___global.js    
+```
+
+
+#####檔案名稱: test.js
+```js
+//---------------------------------------
+// 透過require引用global.js的匯出物件
+//---------------------------------------
+var global = require('./global.js');
+
+console.log(global.url);
+console.log(global.user);
+console.log(global.password);
+```
+
+
+#####檔案名稱: global.js
+```js
+//--------------------------------
+// 以下變數將由引用模組的程式共用
+//--------------------------------
+var url='http://www.ntub.edu.tw';
+var user='guest';
+var password='abc123';
+
+//----------------------------
+// 模組匯出包含共用變數的物件
+//----------------------------
+module.exports = {
+    'url':url,
+    'user':user,
+    'password':password
+};
+```
