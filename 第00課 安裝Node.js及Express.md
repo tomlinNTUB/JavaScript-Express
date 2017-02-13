@@ -68,3 +68,13 @@ npm install mysql --save
 圖示如下:<p>
 ![GitHub Logo](/images/f00_5.png)
 
+
+
+## (6)啟動web網站
+
+在命令提示字元的環境下輸入:<br>
+```
+npm start
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_6.png)
