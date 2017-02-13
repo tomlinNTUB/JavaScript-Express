@@ -16,3 +16,23 @@ Node.js 可以在 `https://nodejs.org/en/` 下載. <p>
 npm install express-generator -g<p>
 圖示如下:<p>
 ![GitHub Logo](/images/f00_2.png)
+
+
+## (3)建立一個 Express框架的網站
+
+假設網站將建立磁碟機D槽內的<web>資料夾中, 如下:
+
+```
+d:\
+ |__<web>  
+      |__ (網站內容)
+```
+
+在命令提示字元的環境下輸入:<br>
+```
+d:
+cd\
+express web -ejs
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_3.png)
