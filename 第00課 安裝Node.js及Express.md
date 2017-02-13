@@ -78,3 +78,14 @@ npm start
 ```
 圖示如下:<p>
 ![GitHub Logo](/images/f00_6.png)
+
+
+
+## (7)測試連結web網站
+
+在瀏覽器網址入:<br>
+```
+http://localhost:3000
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_7.png)
