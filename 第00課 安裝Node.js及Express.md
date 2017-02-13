@@ -18,7 +18,7 @@ npm install express-generator -g<p>
 ![GitHub Logo](/images/f00_2.png)
 
 
-## (3)建立一個 Express框架的網站
+## (3)建立一個 Express 框架的網站
 
 假設網站將建立磁碟機D槽內的<web>資料夾中, 如下:
 
@@ -36,3 +36,23 @@ express web -ejs
 ```
 圖示如下:<p>
 ![GitHub Logo](/images/f00_3.png)
+
+
+
+## (4)安裝 web 網站需要的套件
+
+假設網站框架已在前一步驟完成, 建立在磁碟機D槽內的<web>資料夾中, 如下:
+
+```
+d:\
+ |__<web>  
+      |__ (網站內容)
+```
+
+在命令提示字元的環境下輸入:<br>
+```
+cd web
+npm install
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_4.png)
