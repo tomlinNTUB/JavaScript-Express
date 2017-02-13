@@ -101,3 +101,14 @@ http://localhost:3000
 圖示如下:<p>
 ![GitHub Logo](/images/f00_8.png)
 
+
+
+## (9)重新啟動web網站
+
+如步驟(6), 在命令提示字元的環境下輸入:<br>
+```
+npm start
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_6.png)
+
