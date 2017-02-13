@@ -14,7 +14,7 @@ Node.js 可以在 `https://nodejs.org/en/` 下載. <p>
 
 在命令提示字元的環境下, 輸入:<br>
 ```
-npm install express-generator -g<p>
+npm install express-generator -g
 ```
 
 圖示如下:<p>
