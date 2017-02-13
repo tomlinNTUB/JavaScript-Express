@@ -56,3 +56,15 @@ npm install
 ```
 圖示如下:<p>
 ![GitHub Logo](/images/f00_4.png)
+
+
+
+## (5)安裝其他需要的套件(*依需要)
+
+在命令提示字元的環境下輸入(假設要加入mysql套件):<br>
+```
+npm install mysql --save
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_5.png)
+
