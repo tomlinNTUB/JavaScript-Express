@@ -89,3 +89,15 @@ http://localhost:3000
 ```
 圖示如下:<p>
 ![GitHub Logo](/images/f00_7.png)
+
+
+
+## (8)停止web網站
+
+在命令提示字元的環境下同時按下:<br>
+```
+[Ctrl]鍵 及 [c]鍵
+```
+圖示如下:<p>
+![GitHub Logo](/images/f00_8.png)
+
