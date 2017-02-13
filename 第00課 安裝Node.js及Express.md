@@ -8,3 +8,11 @@ Node.js 可以在 `https://nodejs.org/en/` 下載. <p>
 雙擊下載檔案以執行安裝程式. <p>
 圖示如下:<p>
 ![GitHub Logo](/images/f00_1.png)
+
+
+## (2)安裝 Express
+
+在命令提示字元的環境下, 輸入:<br>
+npm install express-generator -g<p>
+圖示如下:<p>
+![GitHub Logo](/images/f00_2.png)
