@@ -1,9 +1,8 @@
 ## 第12課 回傳JSON格式資料
 
 
-## 回傳JSON格式資料
 
-## (1) Express網站修改部份檔案:
+### (1) Express網站修改部份檔案:
 ```
  <web>
    |___app.js (修改)
@@ -16,7 +15,7 @@
 
 
 
-## (2-1) 檔案名稱: app.js
+### (2-1) 檔案名稱: app.js
 ```js
 var express = require('express');
 var path = require('path');
@@ -79,7 +78,7 @@ module.exports = app;
 ```
 
 
-## (2-2) 檔案名稱: db.js
+### (2-2) 檔案名稱: db.js
 ```js
 var mysql = require('mysql');
 
@@ -103,7 +102,7 @@ module.exports = pool;
 
 
 
-## (2-3) 檔案名稱: fetchData.js
+### (2-3) 檔案名稱: fetchData.js
 ```js
 var express = require('express');
 var router = express.Router();
