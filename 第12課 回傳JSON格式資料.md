@@ -103,7 +103,7 @@ module.exports = pool;
 
 
 
-#####(3-3) 檔案名稱: fetchData.js
+#####(2-3) 檔案名稱: fetchData.js
 ```js
 var express = require('express');
 var router = express.Router();
