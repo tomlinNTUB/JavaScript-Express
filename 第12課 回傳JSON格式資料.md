@@ -2,7 +2,7 @@
 
 
 
-### (1) Express網站修改部份檔案:
+### (1-1) Express網站修改部份檔案:
 ```
  <web>
    |___app.js (修改)
@@ -11,6 +11,15 @@
           |___fetchData.js (增加)
           |___<lib>
                 |___db.js (增加)   
+```
+
+
+### (1-2) 加載外掛:
+```
+以命令提示字元畫面, 在 <web> 資料夾中執行以下命令:
+
+npm install mysql --save
+npm install cors --save   
 ```
 
 
@@ -38,6 +47,12 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+//------------------------------
+app.set('json spaces', 4);
+var cors = require('cors');
+app.use(cors());
+//------------------------------
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -163,7 +178,7 @@ function sendData(res){
             }	
 			
             //將陣列轉為JSON格式字串, 回傳給呼叫者
-            res.send(JSON.stringify(data));
+            res.json(data);
         }       
     });
 }
