@@ -1,0 +1,515 @@
+# 第13課 網站樣版-非RWD-清單
+
+
+## (1) 網站樣版-非RWD-清單
+
+
+##### 執行結果:
+![GitHub Logo](/imgs/results13-1.jpg)
+
+
+##### 檔案放置方式:
+```
+   | 
+   |___<images>
+   |     |___ logo.jpg  (尺寸:80px*80px)
+   |     
+   |___<css>
+   |     |___ main.css
+   |     |___ myDropdownMenu.css   
+   |
+   |___<js>
+   |     |___ scripts.js  
+   |     |___ myDropdownMenu.js     
+   | 
+   |___index.html   
+   |___templateList.html    
+```
+
+
+##### 檔案名稱: index.html 
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!--*********-->
+<!-- 加入css -->
+<!--*********-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/myDropdownMenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="header">
+        <img src="images/logo.jpg" class="logo">
+       
+        <!--~~~導覽列~~~-->  
+        <div class="navbar">
+            <ul class="left">
+                <li class="dropdown">
+                    <a class="dropdown-toggle">生活..</a>
+                    <ul class="dropdown-menu" >
+                        <a href="#1.1"><li>生活(1)</li></a>
+                        <a href="#1.2"><li>生活(2)</li></a>
+                        <a href="#1.3"><li>生活(3)</li></a>                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle">旅遊..</a>
+                    <ul class="dropdown-menu">
+                        <a href="#2.1"><li>旅遊(1)</li></a>
+                        <a href="#2.2"><li>旅遊(2)</li></a>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="right">
+                <li><a href="#3">食物</a></li>
+                <li><a href="#4">文化</a></li>
+            </ul>            
+        </div> 
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    
+    
+    
+    <!--==========================================-->
+    <div class="container">
+        <div class="content">
+            <h1>主畫面</h1>
+            <p>蔣勳曾說自己是用佈道的心情傳播對美的感動，現在他已經可說是美的宗教家。近幾年來，蔣勳走遍竹科與各地演講，到場的聽眾們彷彿都期待受到「開釋」，除了在席間對於充滿抑揚頓挫的感性分析頻頻點頭，發問的許多也都是已超乎美學的人生之問。事實上，這幾年來，蔣勳談的美，也有很大的變化。他過去比較偏向幫助大家賞析藝術之美，但他在與聽眾愈來愈多的互動中發現，許多上班族的餘暇時間已極度有限了，刻意附庸風雅地去欣賞音樂會、畫展已經沒有必要，重拾與周遭人的感情，重新找回「像個人樣」的生活方式，才能對美真正有所體會。本期美學學院專訪蔣勳，分享上班族也可以找回的生活之美。</p> 
+        </div>    
+
+        <div class="footer">
+            NTUB imd, 2017.    
+        </div>        
+    </div>
+    <!--==========================================-->  
+    
+    <!--*********-->
+    <!-- 載入js  -->
+    <!--*********-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/scripts.js"></script>   
+    <script src="js/myDropdownMenu.js"></script>        
+</body>
+</html>
+```
+
+
+
+##### 檔案名稱: templateList.html 
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!--*********-->
+<!-- 加入css -->
+<!--*********-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/myDropdownMenu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="header">
+        <img src="images/logo.jpg" class="logo">
+       
+        <div class="navbar">
+            <ul class="right">
+                <li><a href="/">回首頁</a></li>
+            </ul>          
+        </div>        
+    </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->  
+    
+    
+    
+    <!--==========================================-->
+    <div class="container">
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="content">
+            <h2 class="title">客戶資料清單</h2>   
+            
+            <p>
+                <!--********************************************-->
+                <table width="100%" border="0" class="dataList">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                 
+                    <tr>
+                        <td width="100">編號</td>
+                        <td width="250">名稱</td>
+                        <td>地址</td>
+                    </tr>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                  
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr> 
+                    <!--~~~~~~~~~~~~~~~~~~~~~~-->                      
+                </table> 
+                <!--********************************************-->
+            </p>	    
+        </div>    
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->      
+        
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="footer">
+            NTUB imd, 2017.    
+        </div>        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--> 
+	
+    </div>
+    <!--==========================================-->  
+    <!--*********-->
+    <!-- 載入js  -->
+    <!--*********-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <script src="js/scripts.js"></script>   
+    <script src="js/myDropdownMenu.js"></script>        
+</body>
+</html>
+```
+
+
+
+##### 檔案名稱: css/main.css
+```css
+@charset "utf-8";
+
+/*---------------------------*/
+/* 引用思源中文                */
+/*---------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/*---------------------------*/
+/* 定義網頁                   */
+/*---------------------------*/
+html, body{
+    font-size:17px;
+    /*設定思源中文*/
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 280;	
+    background-color:#444;
+    margin:0;	
+}
+
+
+/*---------------------------*/
+/* 定義標題                   */
+/*---------------------------*/
+div.header{
+    width:100%;	
+    min-width:800px;
+    height:80px;
+    background-color:#CCC;
+    text-align:center;
+    position:fixed;
+    z-index:20;
+    box-shadow:0px 1px 3px 1px #000;
+}
+
+
+/*---------------------------*/
+/* 定義logo圖示               */
+/*---------------------------*/
+div.header img.logo{
+    width:80px;
+    height:80px;
+    border-radius:40px;
+    position:relative;
+    z-index:30;    
+    top:20px;
+    box-shadow:0px 1px 3px 1px #000;
+}
+
+div.header img.logo:hover{
+    cursor:pointer;
+}
+
+
+/*--~~~~~~~~~~~~~~~~~~~~~~~--*/
+/* 定義容器                   */
+/*--~~~~~~~~~~~~~~~~~~~~~~~--*/
+div.container{
+    width:800px;	
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;	
+    top:80px;
+}
+
+
+/*---------------------------*/
+/* 定義內容                   */
+/*---------------------------*/
+div.content{	   
+    padding:0px 25px 20px 25px;
+    box-sizing:border-box;
+    background:#fff;
+    text-align:justify;
+}
+
+div.content h1,
+div.content h2{
+    margin-top:0;
+    padding-top:25px;
+}
+
+div.content h1:first-child,
+div.content h2:first-child{
+    padding-top:55px;
+}
+
+
+/*---------------------------*/
+/* 定義表格                   */
+/*---------------------------*/
+table.dataList{
+    border-spacing:3px;	
+}
+
+table.dataList tr:first-child td{	
+    height:30px;	
+    background:#666;
+    color:#FFF;
+    padding-left:5px;
+}
+
+table.dataList tr:nth-child(2n+2) td{
+    height:25px;
+    background:#CCC;
+    color:#000;
+    font-size:15px;
+}
+
+table.dataList tr:nth-child(2n+3) td{
+    height:25px;
+    background:#AAA;
+    color:#000;
+    font-size:15px;
+}
+
+
+/*---------------------------*/
+/* 定義表尾                   */
+/*---------------------------*/
+div.footer{
+    height:100px;
+    line-height:100px;
+    background:#CCC;
+    font-size:13px;
+    text-align:center;
+    letter-spacing:3px;
+}
+```
+
+
+
+##### 檔案名稱: css/myDropdownMenu.css
+```css
+@charset "utf-8";
+
+
+/*---------------------------*/
+/* 定義導覽列                 */
+/*---------------------------*/
+div.navbar{	   
+    width:800px;
+    height:40px;
+    line-height:40px;
+    box-sizing:border-box;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:-50px;    
+}
+
+div.navbar ul{	 
+    margin:0;
+    padding:0;
+    list-style-type:none;	
+}
+
+div.navbar ul.left{
+    float:left;
+    margin-left:100px;
+}
+
+div.navbar ul.right{
+    float:right;
+    margin-right:100px;
+}
+
+div.navbar ul li{
+    width:100px;
+    text-align:center;	
+    float:left; 
+}
+
+div.navbar a{
+    cursor:pointer;
+    color:#fff;
+    text-decoration:none;
+    outline:none;
+}
+
+div.navbar a:hover{
+    color:#333;	
+}
+
+div.navbar li:hover .dropdown-menu li{
+    color:#fff;
+}
+
+div.navbar .dropdown-menu li:hover{
+    background-color:rgba(100, 100, 100, 0.9);
+}
+
+div.navbar .dropdown-menu{	
+    position:relative;
+    left:40px;
+    margin-top:-5px;
+}
+
+div.navbar .dropdown-menu li{
+    background-color:rgba(150, 150, 150, 0.9);
+}
+
+div.navbar .dropdown-menu a:not(:last-child) li{
+    border-bottom:1px dotted #FFF;
+}
+```
+
+
+
+##### 檔案名稱: js/scripts.js
+```js
+var isOpened=true;
+
+$(function(){		
+    //===================================================
+    // 設定圖示被點擊
+    //===================================================
+    $('.header .logo').mousedown(function(){
+        if(isOpened){
+            //將導覽列收回
+            $(this).parent().stop().animate({marginTop:-80}, {duration:400, easing:'easeOutBounce'});
+            $(this).stop().animate({top:40}, {duration:400, easing:'easeOutBounce'});	
+            isOpened=false;
+        }else{
+            //將導覽列打開
+            $(this).parent().stop().animate({marginTop:0}, {duration:400, easing:'easeOutBounce'});
+            $(this).stop().animate({top:20}, {duration:400, easing:'easeOutBounce'});
+            isOpened=true;	
+        }
+    });
+    //---------------------------------------------------
+});	
+```
+
+
+
+##### 檔案名稱: js/myDropdownMenu.js
+```js
+$(function(){
+    //===================================================
+    // 設定選單功能(被點擊)
+    //===================================================
+    // 設定子項目初始為收合
+    var prevSubMenu=null;
+    var thisSubMenu=null;
+    var prevItemName=null;
+    var thisItemName=null;
+    var itemHit=false;
+    $('.dropdown-menu').toggle();
+	
+	
+    // 如果母項目被點擊
+    $('.dropdown-toggle').mousedown(function(event) {
+        thisSubMenu=$(this).siblings();
+        thisItemName=$(this).text();
+        itemHit=true;
+		
+        if(prevSubMenu==null){
+            expandNewMenu();
+        }else{
+            if(thisItemName==prevItemName){
+                closePrevMenu();
+            }else{
+                closePrevMenu();
+                expandNewMenu();
+            }
+        }
+
+        return false;
+    });
+	
+    // 如果點擊在畫面中的非選單區域
+    $('html').mousedown(function(event) {
+        if(!itemHit && prevSubMenu!=null){
+            closePrevMenu();
+        }
+        itemHit=false;
+		
+        return false;
+    })
+	
+    // 如果按了ESC鍵
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27 && prevSubMenu!=null) {
+            closePrevMenu();
+        }
+		
+        return false;
+    });
+	
+    // 收合前次選單
+    function closePrevMenu(){
+        prevSubMenu.toggle(300);
+        prevSubMenu=null;
+        prevItemName=null;
+		
+        return false;
+    }
+	
+    // 開啟本次選單
+    function expandNewMenu(){
+        thisSubMenu.toggle(300);
+        prevSubMenu=thisSubMenu;
+        prevItemName=thisItemName;
+		
+        return false;
+    }
+    //---------------------------------------------------
+});
+```
