@@ -455,7 +455,7 @@ $(function(){
 	
 	
     // 如果母項目被點擊
-    $('.dropdown-toggle').mousedown(function(event) {
+    $('.dropdown-toggle').click(function(event) {		
         thisSubMenu=$(this).siblings();
         thisItemName=$(this).text();
         itemHit=true;
@@ -470,27 +470,23 @@ $(function(){
                 expandNewMenu();
             }
         }
-
-        return false;
     });
 	
-    // 如果點擊在畫面中的非選單區域
-    $('html').mousedown(function(event) {
+
+    // 判斷是否該收合已開啟的子選單
+    $('html').click(function(event) {
         if(!itemHit && prevSubMenu!=null){
             closePrevMenu();
         }
         itemHit=false;
-		
-        return false;
     })
+
 	
     // 如果按了ESC鍵
     $(document).keyup(function(e) {
         if (e.keyCode == 27 && prevSubMenu!=null) {
             closePrevMenu();
         }
-		
-        return false;
     });
 	
     // 收合前次選單
@@ -498,8 +494,6 @@ $(function(){
         prevSubMenu.toggle(300);
         prevSubMenu=null;
         prevItemName=null;
-		
-        return false;
     }
 	
     // 開啟本次選單
@@ -507,8 +501,6 @@ $(function(){
         thisSubMenu.toggle(300);
         prevSubMenu=thisSubMenu;
         prevItemName=thisItemName;
-		
-        return false;
     }
     //---------------------------------------------------
 });
