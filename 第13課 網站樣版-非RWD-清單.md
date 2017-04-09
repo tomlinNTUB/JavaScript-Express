@@ -340,9 +340,8 @@ div.footer{
 ```css
 @charset "utf-8";
 
-
 /*---------------------------*/
-/* 定義導覽列                 */
+/* 定義導覽列                */
 /*---------------------------*/
 div.navbar{	   
     width:800px;
@@ -371,10 +370,16 @@ div.navbar ul.right{
     margin-right:100px;
 }
 
-div.navbar ul li{
+/* 定義主選項 */
+div.navbar ul li{ 
     width:100px;
     text-align:center;	
     float:left; 
+}
+
+/* 定義子選項 */
+div.navbar .dropdown-menu li{ 
+    width:140px;
 }
 
 div.navbar a{
@@ -398,8 +403,8 @@ div.navbar .dropdown-menu li:hover{
 
 div.navbar .dropdown-menu{	
     position:relative;
-    left:40px;
-    margin-top:-5px;
+    left:20px;
+    margin-top:0px;
 }
 
 div.navbar .dropdown-menu li{
@@ -492,14 +497,14 @@ $(function(){
 	
     // 收合前次選單
     function closePrevMenu(){
-        prevSubMenu.toggle(300);
+        prevSubMenu.toggle();
         prevSubMenu=null;
         prevItemName=null;
     }
 	
     // 開啟本次選單
     function expandNewMenu(){
-        thisSubMenu.toggle(300);
+        thisSubMenu.toggle(100);
         prevSubMenu=thisSubMenu;
         prevItemName=thisItemName;
     }
