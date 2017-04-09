@@ -35,7 +35,7 @@
    |
    |___<views>
    |      |___index.ejs             (修改)   
-   |      |___productListByPage.ejs (增加)
+   |      |___customerListByPage.ejs (增加)
    |      |___dataNotFound.ejs      (增加)   
    |
    |___<public>
