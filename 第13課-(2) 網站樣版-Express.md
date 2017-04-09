@@ -6,7 +6,7 @@
 ### 本網站可下載, 檔名「13-2-網站樣版-Express.zip」.
 
 
-##### 執行結果:
+##### 執行結果:(在瀏覽器輸入http://localhost:3000)
 ![GitHub Logo](/images/results13-2.jpg)
 
 
