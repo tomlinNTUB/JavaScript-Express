@@ -297,13 +297,14 @@ div.content h2:first-child{
 /*---------------------------*/
 table.dataList{
     border-spacing:3px;	
+    border-collapse:separate;    
 }
 
 table.dataList tr:first-child td{	
-    height:30px;	
+    height:32px;	
     background:#666;
     color:#FFF;
-    padding-left:5px;
+    padding-left:10px;
 }
 
 table.dataList tr:nth-child(2n+2) td{
@@ -311,6 +312,7 @@ table.dataList tr:nth-child(2n+2) td{
     background:#CCC;
     color:#000;
     font-size:15px;
+    padding-left:10px;    
 }
 
 table.dataList tr:nth-child(2n+3) td{
@@ -318,6 +320,7 @@ table.dataList tr:nth-child(2n+3) td{
     background:#AAA;
     color:#000;
     font-size:15px;
+    padding-left:10px;    
 }
 
 
