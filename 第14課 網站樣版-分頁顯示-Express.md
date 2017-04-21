@@ -6,7 +6,7 @@
 ### 本網站可下載, 檔名「14-網站樣版-Express.zip」.
 
 
-##### 執行結果:(在瀏覽器輸入http://localhost:3000)
+### 執行結果:(在瀏覽器輸入http://localhost:3000)
 ![GitHub Logo](/images/results14.jpg)
 
 
@@ -19,7 +19,7 @@
 ```
 
 
-##### 檔案放置方式:
+### 檔案放置方式:
 ```
 ** 將「14-網站樣版-Express.zip」下載解壓縮後, 複製到網站<web>資料夾中.
 ** 本壓縮檔中已加入bootstrap的css及js.
