@@ -10,7 +10,7 @@
 ![GitHub Logo](/images/results13-2.jpg)
 
 
-### (3) 執行環境準備:
+### 執行環境準備:
 ```
 (1) 以「第00課 安裝Node.js及Express」的說明建立一個web網站
 (2) 安裝MySQL套件
