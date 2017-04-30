@@ -3273,7 +3273,7 @@ CREATE TABLE `product` (
   `orderAmt` int(11) DEFAULT NULL,
   `safeAmt` int(11) DEFAULT NULL,
   `inventoryDate` date DEFAULT NULL,
-  `picture` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `picture` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`proNo`),
   UNIQUE KEY `proNoIndex` (`proNo`),
   KEY `proNameIndex` (`proName`),
