@@ -27,16 +27,16 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							 <a class="nav-link" href="/productList">產品清單</a>
+							 <a class="nav-link" href="#">產品清單</a>
 						</li>
 						<li class="nav-item">
-							 <a class="nav-link" href="/customerList">客戶清單</a>
+							 <a class="nav-link" href="#">客戶清單</a>
 						</li>
 						<li class="nav-item">
-							 <a class="nav-link" href="/supplierList">供應商清單</a>
+							 <a class="nav-link" href="#">供應商清單</a>
 						</li>
 						<li class="nav-item">
-							 <a class="nav-link" href="/productTypeList">產品詳細清單</a>
+							 <a class="nav-link" href="#">產品詳細清單</a>
 						</li>						
 					</ul>
 				</div>
