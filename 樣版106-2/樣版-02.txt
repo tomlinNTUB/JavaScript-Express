@@ -29,10 +29,10 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">清單</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="/productList">產品清單</a> 
-								<a class="dropdown-item" href="/customerList">客戶清單</a> 
-								<a class="dropdown-item" href="/supplierList">供應商清單</a>
-								<a class="dropdown-item" href="/productTypeList">產品詳細清單</a>
+								<a class="dropdown-item" href="#">產品清單</a> 
+								<a class="dropdown-item" href="#">客戶清單</a> 
+								<a class="dropdown-item" href="#">供應商清單</a>
+								<a class="dropdown-item" href="#">產品詳細清單</a>
 							</div>
 						</li>					
 					</ul>
