@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
         if (error||results.length==0){
             res.render('dataNotFound', {});  //轉給找不到資料的畫面
         }else{
-            res.render('productList', {items:results});  //轉給顯示資料的畫面
+            res.render('product', {items:results});  //轉給顯示資料的畫面
         }       
     });
 });
