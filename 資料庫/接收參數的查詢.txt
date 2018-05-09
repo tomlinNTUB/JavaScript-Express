@@ -13,7 +13,7 @@ var pool = require('./db.js');
 router.get('/', function(req, res, next) {
     var pno = req.param("no").trim();  //取得傳入參數
 	
-    pool.query('select * from product where proNo=?', [pno], function (error, results, fields) {
+    pool.query('select * from product where proNo = ?', [pno], function (error, results, fields) {
         if (error||results.length==0){
             res.render('dataNotFound', {});  //轉到找不到資料的畫面
         }else{
