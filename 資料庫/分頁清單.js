@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
-//----------------------------------
-// 引用db.js的pool物件
-//----------------------------------
+//----------------------------------------------------
+// 透過require引用db.js的pool物件,
+// 即使多個程式均引用, 在系統中只有一份pool物件.
+//----------------------------------------------------
 var pool = require('./db.js');
 
 var startPage=1;
@@ -12,9 +13,6 @@ var navSegments=10;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    //--------------------------
-    // 取得頁碼參數
-    //--------------------------    
     var pageNo=parseInt(req.param('pageNo'));
 
     //--------------------------
@@ -60,7 +58,7 @@ router.get('/', function(req, res, next) {
                 res.render('dataNotFound', {});
             }else{
                 var recordNo=(pageNo-1)*linePerPage+1;
-                res.render('product', {data:results, pageNo:pageNo, totalLine:totalLine, totalPage:totalPage, startPage:startPage, linePerPage:linePerPage, navSegments:navSegments});
+                res.render('product', {items:results, pageNo:pageNo, totalLine:totalLine, totalPage:totalPage, startPage:startPage, linePerPage:linePerPage, navSegments:navSegments});
             }
         }); 
     }); 
