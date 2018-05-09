@@ -64,21 +64,21 @@
 
 							<% if(startPage>1){ %>
 								<li  class="page-item">
-									<a class="page-link" href="/productListByPage?pageNo=<%=(startPage-1)%>">上一區段...</a>
+									<a class="page-link" href="/product?pageNo=<%=(startPage-1)%>">上一區段...</a>
 								</li>
 							<% } %> 
 
 							<% for(var i=startPage; i<startPage+linePerPage; i++) {%>
 								<% if(i<=totalPage){ %>
 									<li class="page-item">
-										<a class="page-link" href="/productListByPage?pageNo=<%=i%>"><%=i%></a>
+										<a class="page-link" href="/product?pageNo=<%=i%>"><%=i%></a>
 									</li>
 								<% } %> 
 							<% } %>
 
 							<% if(startPage+linePerPage<totalPage){ %>
 								<li class="page-item">
-									<a  class="page-link" href="/productListByPage?pageNo=<%=(startPage+linePerPage)%>">...下一區段</a>
+									<a  class="page-link" href="/product?pageNo=<%=(startPage+linePerPage)%>">...下一區段</a>
 								</li>
 							<% } %>                         
 						</ul>
