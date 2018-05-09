@@ -92,6 +92,43 @@
 			<!------------------------------>  
 			<div class="row">				
 				<div class="col-md-12">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>
+									編號
+								</th>
+								<th>
+									名稱
+								</th>
+								<th>
+									單價
+								</th>
+								<th>
+									庫存量
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% items.forEach(function(item){ %>
+								<tr>
+									<td>
+										<%= item.proNo %>
+									</td>
+									<td>
+										<%= item.proName %>
+									</td>
+									<td>
+										<%= item.price %>
+									</td>
+									<td>
+										<%= item.stockAmt %>
+									</td>
+								</tr>
+							<% }); %>
+						</tbody>
+					</table>				
+				
 				</div>				
 			</div>
 			<!------------------------------>  
