@@ -68,7 +68,7 @@
 								</li>
 							<% } %> 
 
-							<% for(var i=startPage; i<startPage+linePerPage; i++) {%>
+							<% for(var i=startPage; i<startPage+navSegments; i++) {%>
 								<% if(i<=totalPage){ %>
 									<li class="page-item">
 										<a class="page-link" href="/product?pageNo=<%=i%>"><%=i%></a>
@@ -78,7 +78,7 @@
 
 							<% if(startPage+linePerPage<totalPage){ %>
 								<li class="page-item">
-									<a  class="page-link" href="/product?pageNo=<%=(startPage+linePerPage)%>">...下一區段</a>
+									<a  class="page-link" href="/product?pageNo=<%=(startPage+navSegments)%>">...下一區段</a>
 								</li>
 							<% } %>                         
 						</ul>
