@@ -142,16 +142,17 @@
 		</div>
 	</div>
 </div>
-	<script>
-		//產生資料及標題陣列, 提供my.Chart.bundle.js使用
-		var myData=[];
-		var myLabel=[];
+
+    <script>
+        //產生資料及標題, 提供my.Chart.bundle.js使用
+        var myData=[];
+        var myLabel=[];
 		
-		<% items.forEach(function(item){ %>
-			myData.push(<%= item.price %>); 
-			myLabel.push('<%= item.proName %>');
-		<% }); %>
-	</script>
+        <% items.forEach(function(item){ %>
+            myData.push(<%= item.price %>); 
+            myLabel.push('<%= item.proName %>');
+        <% }); %>
+    </script>
 	
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
