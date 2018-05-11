@@ -143,21 +143,52 @@
 	</div>
 </div>
 
-    <script>
-        //產生資料及標題, 提供my.Chart.bundle.js使用
-        var myData=[];
-        var myLabel=[];
-		
-        <% items.forEach(function(item){ %>
-            myData.push(<%= item.price %>); 
-            myLabel.push('<%= item.proName %>');
-        <% }); %>
-    </script>
-	
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/Chart.bundle.js"></script>  
-    <script src="js/my.Chart.bundle.js"></script> 
+	<script src="js/Chart.bundle.js"></script>  
+
+	<script>
+		//-------------------------------	
+		//產生標題及資料陣列
+		//-------------------------------		
+		var myLabel=[];
+		var myData=[];
+		
+		<% items.forEach(function(item){ %>
+			myLabel.push('<%= item.proName %>');
+			myData.push(<%= item.price %>); 			
+		<% }); %>
+
+		//-------------------------------	
+		//產生圖表
+		//-------------------------------		
+		var ctx = document.getElementById("myChart").getContext('2d');
+
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: myLabel,
+				datasets: [{
+					label: '產品價格',
+					data: myData,
+					fill: false,
+					backgroundColor: 'rgba(212, 106, 106, 1)',
+					borderColor: 'rgba(212, 106, 106, 1)'
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});	
+		//-------------------------------
+	</script>
+	
     <script src="js/scripts.js"></script>
   </body>
 </html>
