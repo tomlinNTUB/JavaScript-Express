@@ -1,20 +1,6 @@
 
 
 
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : case
-Source Server Version : 50716
-Source Host           : localhost:3306
-Source Database       : north2
-
-Target Server Type    : MYSQL
-Target Server Version : 50716
-File Encoding         : 65001
-
-Date: 2017-02-13 16:34:13
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
@@ -901,71 +887,71 @@ INSERT INTO `orddetails` VALUES ('710', '10277', 'P028', '20');
 INSERT INTO `orddetails` VALUES ('711', '10804', 'P028', '24');
 INSERT INTO `orddetails` VALUES ('712', '10302', 'P028', '28');
 INSERT INTO `orddetails` VALUES ('713', '11068', 'P028', '8');
-INSERT INTO `orddetails` VALUES ('714', '10476', 'P029', '2');
-INSERT INTO `orddetails` VALUES ('715', '11030', 'P029', '60');
-INSERT INTO `orddetails` VALUES ('716', '10707', 'P029', '21');
-INSERT INTO `orddetails` VALUES ('717', '10356', 'P029', '12');
-INSERT INTO `orddetails` VALUES ('718', '10857', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('719', '10802', 'P029', '60');
-INSERT INTO `orddetails` VALUES ('720', '11007', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('721', '10630', 'P029', '12');
-INSERT INTO `orddetails` VALUES ('722', '10382', 'P029', '14');
-INSERT INTO `orddetails` VALUES ('723', '10993', 'P029', '50');
-INSERT INTO `orddetails` VALUES ('724', '10280', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('725', '10360', 'P029', '35');
-INSERT INTO `orddetails` VALUES ('726', '10912', 'P029', '60');
-INSERT INTO `orddetails` VALUES ('727', '10872', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('728', '10791', 'P029', '14');
-INSERT INTO `orddetails` VALUES ('729', '10354', 'P029', '4');
-INSERT INTO `orddetails` VALUES ('730', '10893', 'P029', '24');
-INSERT INTO `orddetails` VALUES ('731', '10268', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('732', '10725', 'P029', '6');
-INSERT INTO `orddetails` VALUES ('733', '10624', 'P029', '6');
-INSERT INTO `orddetails` VALUES ('734', '10369', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('735', '10629', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('736', '10389', 'P029', '15');
-INSERT INTO `orddetails` VALUES ('737', '10305', 'P029', '25');
-INSERT INTO `orddetails` VALUES ('738', '10728', 'P029', '12');
-INSERT INTO `orddetails` VALUES ('739', '10930', 'P029', '25');
-INSERT INTO `orddetails` VALUES ('740', '10971', 'P029', '14');
-INSERT INTO `orddetails` VALUES ('741', '10801', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('742', '10529', 'P029', '14');
-INSERT INTO `orddetails` VALUES ('743', '10990', 'P029', '65');
-INSERT INTO `orddetails` VALUES ('744', '10485', 'P029', '30');
-INSERT INTO `orddetails` VALUES ('745', '10510', 'P029', '36');
-INSERT INTO `orddetails` VALUES ('746', '10400', 'P029', '21');
-INSERT INTO `orddetails` VALUES ('747', '10615', 'P029', '5');
-INSERT INTO `orddetails` VALUES ('748', '11028', 'P029', '35');
-INSERT INTO `orddetails` VALUES ('749', '10398', 'P029', '120');
-INSERT INTO `orddetails` VALUES ('750', '10425', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('751', '10698', 'P029', '12');
-INSERT INTO `orddetails` VALUES ('752', '10787', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('753', '11064', 'P029', '4');
-INSERT INTO `orddetails` VALUES ('754', '11002', 'P029', '40');
-INSERT INTO `orddetails` VALUES ('755', '11001', 'P029', '6');
-INSERT INTO `orddetails` VALUES ('756', '10897', 'P029', '80');
-INSERT INTO `orddetails` VALUES ('757', '10583', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('758', '10564', 'P029', '25');
-INSERT INTO `orddetails` VALUES ('759', '11077', 'P029', '2');
-INSERT INTO `orddetails` VALUES ('760', '10451', 'P029', '120');
-INSERT INTO `orddetails` VALUES ('761', '10691', 'P029', '40');
-INSERT INTO `orddetails` VALUES ('762', '10559', 'P029', '18');
-INSERT INTO `orddetails` VALUES ('763', '10465', 'P029', '18');
-INSERT INTO `orddetails` VALUES ('764', '10290', 'P029', '15');
-INSERT INTO `orddetails` VALUES ('765', '10772', 'P029', '18');
-INSERT INTO `orddetails` VALUES ('766', '10687', 'P029', '10');
-INSERT INTO `orddetails` VALUES ('767', '11006', 'P029', '2');
-INSERT INTO `orddetails` VALUES ('768', '10254', 'P029', '21');
-INSERT INTO `orddetails` VALUES ('769', '10668', 'P029', '4');
-INSERT INTO `orddetails` VALUES ('770', '10461', 'P029', '60');
-INSERT INTO `orddetails` VALUES ('771', '11056', 'P029', '35');
-INSERT INTO `orddetails` VALUES ('772', '10666', 'P029', '36');
-INSERT INTO `orddetails` VALUES ('773', '10440', 'P029', '24');
-INSERT INTO `orddetails` VALUES ('774', '10342', 'P029', '40');
-INSERT INTO `orddetails` VALUES ('775', '10606', 'P029', '20');
-INSERT INTO `orddetails` VALUES ('776', '10834', 'P029', '8');
-INSERT INTO `orddetails` VALUES ('777', '10948', 'P029', '4');
-INSERT INTO `orddetails` VALUES ('778', '10902', 'P029', '30');
+INSERT INTO `orddetails` VALUES ('714', '10476', 'P029', '7');
+INSERT INTO `orddetails` VALUES ('715', '11030', 'P029', '65');
+INSERT INTO `orddetails` VALUES ('716', '10707', 'P029', '26');
+INSERT INTO `orddetails` VALUES ('717', '10356', 'P029', '17');
+INSERT INTO `orddetails` VALUES ('718', '10857', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('719', '10802', 'P029', '65');
+INSERT INTO `orddetails` VALUES ('720', '11007', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('721', '10630', 'P029', '17');
+INSERT INTO `orddetails` VALUES ('722', '10382', 'P029', '19');
+INSERT INTO `orddetails` VALUES ('723', '10993', 'P029', '55');
+INSERT INTO `orddetails` VALUES ('724', '10280', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('725', '10360', 'P029', '40');
+INSERT INTO `orddetails` VALUES ('726', '10912', 'P029', '65');
+INSERT INTO `orddetails` VALUES ('727', '10872', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('728', '10791', 'P029', '19');
+INSERT INTO `orddetails` VALUES ('729', '10354', 'P029', '9');
+INSERT INTO `orddetails` VALUES ('730', '10893', 'P029', '29');
+INSERT INTO `orddetails` VALUES ('731', '10268', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('732', '10725', 'P029', '11');
+INSERT INTO `orddetails` VALUES ('733', '10624', 'P029', '11');
+INSERT INTO `orddetails` VALUES ('734', '10369', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('735', '10629', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('736', '10389', 'P029', '20');
+INSERT INTO `orddetails` VALUES ('737', '10305', 'P029', '30');
+INSERT INTO `orddetails` VALUES ('738', '10728', 'P029', '17');
+INSERT INTO `orddetails` VALUES ('739', '10930', 'P029', '30');
+INSERT INTO `orddetails` VALUES ('740', '10971', 'P029', '19');
+INSERT INTO `orddetails` VALUES ('741', '10801', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('742', '10529', 'P029', '19');
+INSERT INTO `orddetails` VALUES ('743', '10990', 'P029', '70');
+INSERT INTO `orddetails` VALUES ('744', '10485', 'P029', '35');
+INSERT INTO `orddetails` VALUES ('745', '10510', 'P029', '41');
+INSERT INTO `orddetails` VALUES ('746', '10400', 'P029', '26');
+INSERT INTO `orddetails` VALUES ('747', '10615', 'P029', '10');
+INSERT INTO `orddetails` VALUES ('748', '11028', 'P029', '40');
+INSERT INTO `orddetails` VALUES ('749', '10398', 'P029', '125');
+INSERT INTO `orddetails` VALUES ('750', '10425', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('751', '10698', 'P029', '17');
+INSERT INTO `orddetails` VALUES ('752', '10787', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('753', '11064', 'P029', '9');
+INSERT INTO `orddetails` VALUES ('754', '11002', 'P029', '45');
+INSERT INTO `orddetails` VALUES ('755', '11001', 'P029', '11');
+INSERT INTO `orddetails` VALUES ('756', '10897', 'P029', '85');
+INSERT INTO `orddetails` VALUES ('757', '10583', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('758', '10564', 'P029', '30');
+INSERT INTO `orddetails` VALUES ('759', '11077', 'P029', '7');
+INSERT INTO `orddetails` VALUES ('760', '10451', 'P029', '125');
+INSERT INTO `orddetails` VALUES ('761', '10691', 'P029', '45');
+INSERT INTO `orddetails` VALUES ('762', '10559', 'P029', '23');
+INSERT INTO `orddetails` VALUES ('763', '10465', 'P029', '23');
+INSERT INTO `orddetails` VALUES ('764', '10290', 'P029', '20');
+INSERT INTO `orddetails` VALUES ('765', '10772', 'P029', '23');
+INSERT INTO `orddetails` VALUES ('766', '10687', 'P029', '15');
+INSERT INTO `orddetails` VALUES ('767', '11006', 'P029', '7');
+INSERT INTO `orddetails` VALUES ('768', '10254', 'P029', '26');
+INSERT INTO `orddetails` VALUES ('769', '10668', 'P029', '9');
+INSERT INTO `orddetails` VALUES ('770', '10461', 'P029', '65');
+INSERT INTO `orddetails` VALUES ('771', '11056', 'P029', '40');
+INSERT INTO `orddetails` VALUES ('772', '10666', 'P029', '41');
+INSERT INTO `orddetails` VALUES ('773', '10440', 'P029', '29');
+INSERT INTO `orddetails` VALUES ('774', '10342', 'P029', '45');
+INSERT INTO `orddetails` VALUES ('775', '10606', 'P029', '25');
+INSERT INTO `orddetails` VALUES ('776', '10834', 'P029', '13');
+INSERT INTO `orddetails` VALUES ('777', '10948', 'P029', '9');
+INSERT INTO `orddetails` VALUES ('778', '10902', 'P029', '35');
 INSERT INTO `orddetails` VALUES ('779', '10534', 'P030', '10');
 INSERT INTO `orddetails` VALUES ('780', '10282', 'P030', '6');
 INSERT INTO `orddetails` VALUES ('781', '10306', 'P030', '10');
@@ -3273,7 +3259,6 @@ CREATE TABLE `product` (
   `orderAmt` int(11) DEFAULT NULL,
   `safeAmt` int(11) DEFAULT NULL,
   `inventoryDate` date DEFAULT NULL,
-  `picture` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`proNo`),
   UNIQUE KEY `proNoIndex` (`proNo`),
   KEY `proNameIndex` (`proName`),
@@ -3286,83 +3271,83 @@ CREATE TABLE `product` (
 -- ----------------------------
 -- Records of product
 -- ----------------------------
-INSERT INTO `product` VALUES ('P001', '蘋果汁', 'S001', 'T001', '18', '39', '0', '10', '2017-02-01', 'p001.jpg');
-INSERT INTO `product` VALUES ('P002', '牛奶', 'S001', 'T001', '19', '17', '40', '25', '2017-02-01', 'p002.jpg');
-INSERT INTO `product` VALUES ('P003', '蕃茄醬', 'S001', 'T002', '10', '13', '70', '25', '2017-02-01', 'p003.jpg');
-INSERT INTO `product` VALUES ('P004', '鹽巴', 'S002', 'T002', '22', '53', '0', '0', '2017-02-01', 'p004.jpg');
-INSERT INTO `product` VALUES ('P005', '麻油', 'S002', 'T002', '21', '0', '0', '0', '2017-02-01', 'p005.jpg');
-INSERT INTO `product` VALUES ('P006', '醬油', 'S003', 'T002', '25', '120', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P007', '海鮮粉', 'S003', 'T007', '30', '15', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P008', '胡椒粉', 'S003', 'T002', '40', '6', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P009', '讚油雞', 'S004', 'T006', '97', '29', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P010', '大甲蟹', 'S004', 'T008', '31', '31', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P011', '民眾起司', 'S005', 'T004', '21', '22', '30', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P012', '德國起司', 'S005', 'T004', '38', '86', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P013', '龍蝦', 'S006', 'T008', '6', '24', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P014', '沙茶', 'S006', 'T007', '23', '35', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P015', '味素', 'S006', 'T002', '16', '39', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P016', '餅乾', 'S007', 'T003', '17', '29', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P017', '豬肉', 'S007', 'T006', '39', '0', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P018', '墨魚', 'S007', 'T008', '62', '42', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P019', '糖果', 'S008', 'T003', '9', '25', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P020', '豆乾', 'S008', 'T003', '81', '40', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P021', '花生', 'S008', 'T003', '10', '3', '40', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P022', '再來米', 'S009', 'T005', '21', '104', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P023', '燕麥', 'S009', 'T005', '9', '61', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P024', '汽水', 'S010', 'T001', '4', '20', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P025', '巧克力', 'S011', 'T003', '14', '76', '0', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P026', '綿綿糖', 'S011', 'T003', '31', '15', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P027', '牛肉乾', 'S011', 'T003', '44', '49', '0', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P028', '烤肉醬', 'S012', 'T007', '46', '26', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P029', '鴨肉', 'S012', 'T006', '124', '0', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P030', '黃魚', 'S013', 'T008', '26', '10', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P031', '溫馨起司', 'S014', 'T004', '12', '0', '70', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P032', '白起司', 'S014', 'T004', '32', '9', '40', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P033', '台中起司', 'S015', 'T004', '2', '112', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P034', '啤酒', 'S016', 'T001', '14', '111', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P035', '芭樂汁', 'S016', 'T001', '18', '20', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P036', '魷魚', 'S017', 'T008', '19', '112', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P037', '干貝', 'S017', 'T008', '26', '11', '50', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P038', '綠茶', 'S018', 'T001', '264', '17', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P039', '運動飲料', 'S018', 'T001', '18', '69', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P040', '蝦米', 'S019', 'T008', '18', '123', '0', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P041', '蝦子', 'S019', 'T008', '10', '85', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P042', '糙米', 'S020', 'T005', '14', '26', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P043', '柳橙汁', 'S020', 'T001', '46', '17', '10', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P044', '蠔油', 'S020', 'T002', '19', '27', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P045', '雪魚', 'S021', 'T008', '10', '5', '70', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P046', '蚵', 'S021', 'T008', '12', '95', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P047', '蛋糕', 'S022', 'T003', '10', '36', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P048', '玉米片', 'S022', 'T003', '13', '15', '70', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P049', '薯條', 'S023', 'T003', '20', '10', '60', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P050', '玉米餅', 'S023', 'T003', '16', '65', '0', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P051', '豬肉乾', 'S024', 'T007', '53', '20', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P052', '三合一麥片', 'S024', 'T005', '7', '38', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P053', '鹽水鴨', 'S024', 'T006', '33', '0', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P054', '雞肉', 'S025', 'T006', '7', '21', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P055', '鴨肉', 'S025', 'T006', '24', '115', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P056', '白米', 'S026', 'T005', '38', '21', '10', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P057', '小米', 'S026', 'T005', '20', '36', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P058', '花枝', 'S027', 'T008', '13', '62', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P059', '蘇澳起司', 'S028', 'T004', '55', '79', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P060', '花起司', 'S028', 'T004', '34', '19', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P061', '海鮮醬', 'S029', 'T002', '28', '113', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P062', '山渣片', 'S029', 'T003', '49', '17', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P063', '甜辣醬', 'S007', 'T002', '44', '24', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P064', '黃豆', 'S012', 'T005', '33', '22', '80', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P065', '海苔醬', 'S002', 'T002', '21', '76', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P066', '肉鬆', 'S002', 'T002', '17', '4', '100', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P067', '礦泉水', 'S016', 'T001', '14', '52', '0', '10', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P068', '綠豆糕', 'S008', 'T003', '12', '6', '10', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P069', '黑起司', 'S015', 'T004', '36', '26', '0', '15', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P070', '蘇打水', 'S007', 'T001', '15', '15', '10', '30', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P071', '義大利起司', 'S015', 'T004', '22', '26', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P072', '酸起司', 'S014', 'T004', '35', '14', '0', '0', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P073', '海哲皮', 'S017', 'T008', '15', '101', '0', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P074', '雞湯塊', 'S004', 'T007', '10', '4', '20', '5', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P075', '濃縮咖啡', 'S012', 'T001', '8', '125', '0', '25', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P076', '檸檬汁', 'S023', 'T001', '18', '57', '0', '20', '2017-02-01', null);
-INSERT INTO `product` VALUES ('P077', '辣椒粉', 'S012', 'T002', '13', '32', '0', '15', '2017-02-01', null);
+INSERT INTO `product` VALUES ('P001', '蘋果汁', 'S001', 'T001', '50', '39', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P002', '牛奶', 'S001', 'T001', '65', '17', '40', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P003', '蕃茄醬', 'S001', 'T002', '85', '13', '70', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P004', '海鹽', 'S002', 'T002', '40', '53', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P005', '麻油', 'S002', 'T002', '55', '0', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P006', '醬油', 'S003', 'T002', '85', '120', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P007', '海鮮粉', 'S003', 'T007', '180', '15', '0', '10', '2018-04-25');
+INSERT INTO `product` VALUES ('P008', '胡椒粉', 'S003', 'T002', '90', '6', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P009', '讚油雞', 'S004', 'T006', '250', '29', '0', '10', '2018-05-10');
+INSERT INTO `product` VALUES ('P010', '大甲蟹', 'S004', 'T008', '300', '31', '0', '10', '2018-05-10');
+INSERT INTO `product` VALUES ('P011', '民眾起司', 'S005', 'T004', '150', '22', '30', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P012', '德國起司', 'S005', 'T004', '210', '86', '0', '10', '2018-05-10');
+INSERT INTO `product` VALUES ('P013', '龍蝦', 'S006', 'T008', '500', '24', '0', '5', '2018-05-10');
+INSERT INTO `product` VALUES ('P014', '沙茶', 'S006', 'T007', '120', '35', '0', '10', '2018-04-15');
+INSERT INTO `product` VALUES ('P015', '味素', 'S006', 'T002', '50', '39', '0', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P016', '餅乾', 'S007', 'T003', '45', '29', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P017', '糙米', 'S007', 'T006', '90', '0', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P018', '墨魚', 'S007', 'T008', '160', '42', '0', '10', '2018-04-25');
+INSERT INTO `product` VALUES ('P019', '糖果', 'S008', 'T003', '60', '25', '0', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P020', '豆乾', 'S008', 'T003', '80', '40', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P021', '花生', 'S008', 'T003', '100', '3', '40', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P022', '再來米', 'S009', 'T005', '75', '104', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P023', '燕麥', 'S009', 'T005', '90', '61', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P024', '汽水', 'S010', 'T001', '30', '20', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P025', '巧克力', 'S011', 'T003', '90', '76', '0', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P026', '綿綿糖', 'S011', 'T003', '30', '15', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P027', '牛肉乾', 'S011', 'T003', '340', '49', '0', '30', '2018-05-10');
+INSERT INTO `product` VALUES ('P028', '烤肉醬', 'S012', 'T007', '110', '26', '0', '10', '2018-04-15');
+INSERT INTO `product` VALUES ('P029', '海帶', 'S012', 'T006', '120', '0', '0', '10', '2018-04-15');
+INSERT INTO `product` VALUES ('P030', '黃魚', 'S013', 'T008', '250', '10', '0', '15', '2018-05-10');
+INSERT INTO `product` VALUES ('P031', '溫馨起司', 'S014', 'T004', '185', '0', '70', '20', '2018-04-25');
+INSERT INTO `product` VALUES ('P032', '白起司', 'S014', 'T004', '155', '9', '40', '25', '2018-04-25');
+INSERT INTO `product` VALUES ('P033', '台中起司', 'S015', 'T004', '130', '112', '0', '20', '2018-04-15');
+INSERT INTO `product` VALUES ('P034', '啤酒', 'S016', 'T001', '55', '111', '0', '15', '2018-05-01');
+INSERT INTO `product` VALUES ('P035', '芭樂汁', 'S016', 'T001', '65', '20', '0', '15', '2018-05-01');
+INSERT INTO `product` VALUES ('P036', '魷魚', 'S017', 'T008', '190', '112', '0', '20', '2018-04-25');
+INSERT INTO `product` VALUES ('P037', '干貝', 'S017', 'T008', '260', '11', '50', '25', '2018-05-10');
+INSERT INTO `product` VALUES ('P038', '綠茶', 'S018', 'T001', '20', '17', '0', '15', '2018-05-01');
+INSERT INTO `product` VALUES ('P039', '運動飲料', 'S018', 'T001', '20', '69', '0', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P040', '蝦米', 'S019', 'T008', '150', '123', '0', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P041', '蝦子', 'S019', 'T008', '200', '85', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P042', '糙米', 'S020', 'T005', '85', '26', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P043', '柳橙汁', 'S020', 'T001', '45', '17', '10', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P044', '蠔油', 'S020', 'T002', '250', '27', '0', '15', '2018-05-10');
+INSERT INTO `product` VALUES ('P045', '雪魚', 'S021', 'T008', '300', '5', '70', '15', '2018-05-10');
+INSERT INTO `product` VALUES ('P046', '蚵', 'S021', 'T008', '120', '95', '0', '10', '2018-04-15');
+INSERT INTO `product` VALUES ('P047', '蛋糕', 'S022', 'T003', '100', '36', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P048', '玉米片', 'S022', 'T003', '50', '15', '70', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P049', '薯條', 'S023', 'T003', '40', '10', '60', '15', '2018-05-01');
+INSERT INTO `product` VALUES ('P050', '玉米餅', 'S023', 'T003', '60', '65', '0', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P051', '豬肉乾', 'S024', 'T007', '150', '20', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P052', '三合一麥片', 'S024', 'T005', '65', '38', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P053', '布丁', 'S024', 'T006', '25', '0', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P054', '紅茶包', 'S025', 'T006', '75', '21', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P055', '麥茶包', 'S025', 'T006', '45', '115', '0', '20', '2018-05-01');
+INSERT INTO `product` VALUES ('P056', '白米', 'S026', 'T005', '85', '21', '10', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P057', '小米', 'S026', 'T005', '90', '36', '0', '20', '2018-05-01');
+INSERT INTO `product` VALUES ('P058', '花枝', 'S027', 'T008', '140', '62', '0', '20', '2018-04-15');
+INSERT INTO `product` VALUES ('P059', '蘇澳起司', 'S028', 'T004', '155', '79', '0', '10', '2018-04-25');
+INSERT INTO `product` VALUES ('P060', '花起司', 'S028', 'T004', '185', '19', '0', '10', '2018-04-25');
+INSERT INTO `product` VALUES ('P061', '海鮮醬', 'S029', 'T002', '100', '113', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P062', '山渣片', 'S029', 'T003', '90', '17', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P063', '甜辣醬', 'S007', 'T002', '90', '24', '0', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P064', '黃豆', 'S012', 'T005', '60', '22', '80', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P065', '海苔醬', 'S002', 'T002', '65', '76', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P066', '肉鬆', 'S002', 'T002', '250', '4', '100', '20', '2018-05-10');
+INSERT INTO `product` VALUES ('P067', '礦泉水', 'S016', 'T001', '20', '52', '0', '10', '2018-05-01');
+INSERT INTO `product` VALUES ('P068', '綠豆糕', 'S008', 'T003', '40', '6', '10', '15', '2018-05-01');
+INSERT INTO `product` VALUES ('P069', '黑起司', 'S015', 'T004', '136', '26', '0', '15', '2018-04-15');
+INSERT INTO `product` VALUES ('P070', '蘇打水', 'S007', 'T001', '25', '15', '10', '30', '2018-05-01');
+INSERT INTO `product` VALUES ('P071', '義大利起司', 'S015', 'T004', '175', '26', '0', '10', '2018-04-25');
+INSERT INTO `product` VALUES ('P072', '酸起司', 'S014', 'T004', '135', '14', '0', '10', '2018-04-15');
+INSERT INTO `product` VALUES ('P073', '海哲皮', 'S017', 'T008', '150', '101', '0', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P074', '雞湯塊', 'S004', 'T007', '100', '4', '20', '5', '2018-05-01');
+INSERT INTO `product` VALUES ('P075', '濃縮咖啡', 'S012', 'T001', '75', '125', '0', '25', '2018-05-01');
+INSERT INTO `product` VALUES ('P076', '檸檬汁', 'S023', 'T001', '95', '57', '0', '20', '2018-05-01');
+INSERT INTO `product` VALUES ('P077', '辣椒粉', 'S012', 'T002', '65', '32', '0', '15', '2018-05-01');
 
 -- ----------------------------
 -- Table structure for `protype`
@@ -3439,5 +3424,8 @@ INSERT INTO `supplier` VALUES ('S026', '弘文', '李先生', '董事長', '台�
 INSERT INTO `supplier` VALUES ('S027', '大鈺', '林小姐', '董事長', '台中市仁愛路四段10號', '台中市', '台中', '71300', '(02) 965-4640', '(02) 965-4640');
 INSERT INTO `supplier` VALUES ('S028', '玉成', '林小姐', '業務', '高雄市中正路四段60號', '高雄市', '高雄', '74000', '(05) 889-4422', '(05) 889-4422');
 INSERT INTO `supplier` VALUES ('S029', '百達', '鍾小姐', '業務助理', '台北縣北新路55號', '台北縣', '台北', '11425', '(02) 555-4699', '(02) 555-4699');
+
+
+
 
 
