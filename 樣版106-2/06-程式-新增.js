@@ -1,5 +1,11 @@
+var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
+
+//------------------
+// 載入資料庫連結
+//------------------
+var pool = require('./db.js');
 
 //------------------
 // 載入資料庫連結
@@ -15,13 +21,15 @@ router.post('/', function(req, res, next) {
     var proName=req.param("proName");
     var price=req.param("price");
     var stockAmt=req.param("stockAmt");
+    var inventoryDate=req.param("inventoryDate");
 	
     //建立一個新資料物件
     var newData={
         proNo:proNo,
         proName:proName,
         price:price,
-        stockAmt:stockAmt
+        stockAmt:stockAmt,
+        inventoryDate:inventoryDate
     }	
 	
     pool.query('INSERT INTO product SET ?', newData, function(err, rows, fields) {
@@ -34,4 +42,6 @@ router.post('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+
 
