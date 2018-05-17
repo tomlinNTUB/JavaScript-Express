@@ -24,8 +24,8 @@ router.post('/', function(req, res, next) {
     var newData={
         proNo:proNo,
         proName:proName,
-		supNo:supNo,
-		typNo:typNo,
+        supNo:supNo,
+        typNo:typNo,
         price:price,
         stockAmt:stockAmt,
         inventoryDate:inventoryDate
