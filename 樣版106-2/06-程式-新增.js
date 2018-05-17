@@ -1,5 +1,3 @@
-
-
 var router = express.Router();
 var mysql = require('mysql');
 
