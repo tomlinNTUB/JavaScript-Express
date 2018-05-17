@@ -8,11 +8,6 @@ var mysql = require('mysql');
 var pool = require('./db.js');
 
 //------------------
-// 載入資料庫連結
-//------------------
-var pool = require('./db.js');
-
-//------------------
 // POST 方法
 //------------------
 router.post('/', function(req, res, next) {
@@ -34,9 +29,9 @@ router.post('/', function(req, res, next) {
 	
     pool.query('INSERT INTO product SET ?', newData, function(err, rows, fields) {
         if (err){
-            res.render('productAddFail', {});     //新增失敗
+            res.render('addFail', {});     //新增失敗
         }else{
-            res.render('productAddSuccess', {});  //新增成功
+            res.render('addSuccess', {});  //新增成功
         }
     });
 });
