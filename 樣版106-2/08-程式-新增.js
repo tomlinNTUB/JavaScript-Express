@@ -7,9 +7,9 @@ var mysql = require('mysql');
 //------------------
 var pool = require('./db.js');
 
-//------------------
-// POST 方法
-//------------------
+//========================
+// 處理POST請求
+//========================
 router.post('/', function(req, res, next) {
     //取得使用者傳來的參數
     var proNo=req.param("proNo");
