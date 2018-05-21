@@ -34,7 +34,9 @@ var upload = multer({
 })
 
 
-/* POST home page. */
+//========================
+// 處理POST請求
+//========================
 router.post('/', upload.single('picture'), function(req, res) {
     // 如果有選擇圖片
     if (typeof req.file != 'undefined'){
