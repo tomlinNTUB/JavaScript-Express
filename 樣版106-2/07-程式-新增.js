@@ -74,9 +74,9 @@ router.post('/', upload.single('picture'), function(req, res) {
 
     pool.query('INSERT INTO product SET ?', newData, function(err, rows, fields) {
         if (err){
-            res.render('productAddFail', {});     //新增失敗
+            res.render('addFail', {});     //新增失敗
         }else{
-            res.render('productAddSuccess', {});  //新增成功
+            res.render('addSuccess', {});  //新增成功
         }
     });
 });
