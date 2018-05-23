@@ -17,23 +17,23 @@ router.get('/', function(req, res, next) {
         if (error||results.length==0){
             res.render('dataNotFound', {});  //轉到找不到資料的畫面
         }else{
-			//------------------------------------------------------
-			//將取得的inventoryDate轉成YYYY-MM-DD型式
-			//------------------------------------------------------
-			var theDate=new Date(results[0].inventoryDate);
-			var year = theDate.getFullYear();
-			var month = theDate.getMonth()+1;
-			var day = theDate.getDate();
+            //------------------------------------------------------
+            //將取得的inventoryDate轉成YYYY-MM-DD型式
+            //------------------------------------------------------
+            var theDate=new Date(results[0].inventoryDate);
+            var year = theDate.getFullYear();
+            var month = theDate.getMonth()+1;
+            var day = theDate.getDate();
 
-			if (day < 10) {
-			  day = '0' + day;
-			}
-			if (month < 10) {
-			  month = '0' + month;
-			}
+            if (day < 10) {
+                day = '0' + day;
+            }
+            if (month < 10) {
+                month = '0' + month;
+            }
 
-			results[0].inventoryDate = year + '-' + month + '-' + day;
-			//------------------------------------------------------
+            results[0].inventoryDate = year + '-' + month + '-' + day;
+            //------------------------------------------------------
 			
             res.render('productModifyForm', {items:results});  //轉到顯示資料的畫面
         }       
@@ -41,3 +41,4 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
