@@ -161,13 +161,13 @@ INSERT INTO `employee` VALUES ('E012', '王大德', '工程師', '1968-12-14', '
 DROP TABLE IF EXISTS `orddetails`;
 CREATE TABLE `orddetails` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `odNo` char(5) CHARACTER SET utf8 DEFAULT NULL,
+  `ordNo` char(5) CHARACTER SET utf8 DEFAULT NULL,
   `proNo` char(4) CHARACTER SET utf8 DEFAULT NULL,
   `amt` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `odNoFKey` (`odNo`),
   KEY `proNoFKey` (`proNo`),
-  CONSTRAINT `odNoFKey` FOREIGN KEY (`odNo`) REFERENCES `ordmaster` (`omNo`),
+  CONSTRAINT `odNoFKey` FOREIGN KEY (`ordNo`) REFERENCES `ordmaster` (`ordNo`),
   CONSTRAINT `proNoFKey` FOREIGN KEY (`proNo`) REFERENCES `product` (`proNo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2219 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -2398,7 +2398,7 @@ INSERT INTO `orddetails` VALUES ('2218', '11068', 'P077', '28');
 -- ----------------------------
 DROP TABLE IF EXISTS `ordmaster`;
 CREATE TABLE `ordmaster` (
-  `omNo` char(5) CHARACTER SET utf8 NOT NULL,
+  `ordNo` char(5) CHARACTER SET utf8 NOT NULL,
   `cusNo` char(4) CHARACTER SET utf8 DEFAULT NULL,
   `empNo` char(4) CHARACTER SET utf8 DEFAULT NULL,
   `ordDate` date DEFAULT NULL,
