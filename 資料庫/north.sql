@@ -165,7 +165,7 @@ CREATE TABLE `orddetails` (
   `proNo` char(4) CHARACTER SET utf8 DEFAULT NULL,
   `amt` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `odNoFKey` (`odNo`),
+  KEY `odNoFKey` (`ordNo`),
   KEY `proNoFKey` (`proNo`),
   CONSTRAINT `odNoFKey` FOREIGN KEY (`ordNo`) REFERENCES `ordmaster` (`ordNo`),
   CONSTRAINT `proNoFKey` FOREIGN KEY (`proNo`) REFERENCES `product` (`proNo`)
