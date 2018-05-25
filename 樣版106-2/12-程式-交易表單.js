@@ -13,7 +13,7 @@ var pool = require('./db.js');
 router.get('/', function(req, res, next) {
     var customerItems;
     var employeeItems;
-	var productItems;
+    var productItems;
 
     pool.query('select * from customer', function(err, results) {       
         if (err) {
@@ -29,20 +29,23 @@ router.get('/', function(req, res, next) {
                 employeeItems=results;
             }
 	
-			pool.query('select * from product', function(err, results) {
-				if (err) {
-					productItems=[];
-				}else{
-					productItems=results;
-				}
+            pool.query('select * from product', function(err, results) {
+                if (err) {
+                    productItems=[];
+                }else{
+                    productItems=results;
+                }
 	
-				//------------------------------------   
-				// 將客戶, 員工, 產品資料一起送出
-				//------------------------------------
-				res.render('exportForm', {customerItems:customerItems, employeeItems:employeeItems, productItems:productItems});
-			});				
-       }); 
+                //------------------------------------   
+                // 將客戶, 員工, 產品資料一起送出
+                //------------------------------------
+                res.render('exportForm', {customerItems:customerItems, employeeItems:employeeItems, productItems:productItems});
+            });				
+        }); 
     }); 
 });
 
 module.exports = router;
+
+
+
