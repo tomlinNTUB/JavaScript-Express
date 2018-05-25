@@ -1,7 +1,6 @@
 
 
 
-
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for `customer`
@@ -167,7 +166,7 @@ CREATE TABLE `orddetails` (
   PRIMARY KEY (`id`),
   KEY `odNoFKey` (`ordNo`),
   KEY `proNoFKey` (`proNo`),
-  CONSTRAINT `odNoFKey` FOREIGN KEY (`ordNo`) REFERENCES `ordmaster` (`ordNo`),
+  CONSTRAINT `ordNoFKey` FOREIGN KEY (`ordNo`) REFERENCES `ordmaster` (`ordNo`),
   CONSTRAINT `proNoFKey` FOREIGN KEY (`proNo`) REFERENCES `product` (`proNo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2219 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -2403,8 +2402,8 @@ CREATE TABLE `ordmaster` (
   `empNo` char(4) CHARACTER SET utf8 DEFAULT NULL,
   `ordDate` date DEFAULT NULL,
   `transFee` int(11) DEFAULT NULL,
-  PRIMARY KEY (`omNo`),
-  UNIQUE KEY `omNoIndex` (`omNo`),
+  PRIMARY KEY (`ordNo`),
+  UNIQUE KEY `omNoIndex` (`ordNo`),
   KEY `cusNoFKey` (`cusNo`),
   KEY `empNoFKey` (`empNo`),
   CONSTRAINT `cusNoFKey` FOREIGN KEY (`cusNo`) REFERENCES `customer` (`cusNo`),
@@ -3424,8 +3423,5 @@ INSERT INTO `supplier` VALUES ('S026', '弘文', '李先生', '董事長', '台�
 INSERT INTO `supplier` VALUES ('S027', '大鈺', '林小姐', '董事長', '台中市仁愛路四段10號', '台中市', '台中', '71300', '(02) 965-4640', '(02) 965-4640');
 INSERT INTO `supplier` VALUES ('S028', '玉成', '林小姐', '業務', '高雄市中正路四段60號', '高雄市', '高雄', '74000', '(05) 889-4422', '(05) 889-4422');
 INSERT INTO `supplier` VALUES ('S029', '百達', '鍾小姐', '業務助理', '台北縣北新路55號', '台北縣', '台北', '11425', '(02) 555-4699', '(02) 555-4699');
-
-
-
 
 
