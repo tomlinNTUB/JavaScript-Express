@@ -19,8 +19,11 @@ router.get('/', function(req, res, next) {
     }
     //------------------------------------------
 
+    
+    //....其他需要的程式....
+    
 
-    //已登入使用者	
+    //已登入使用者(傳送使用者id及姓名, 也可加入其他參數)	
     res.render('important', {userid:req.session.userid, username:req.session.username});
 });
 
