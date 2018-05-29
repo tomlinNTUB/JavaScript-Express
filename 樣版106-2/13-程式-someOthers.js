@@ -24,7 +24,7 @@ router.get('/', function(req, res, next) {
     
 
     //已登入使用者(傳送使用者id及姓名, 也可加入其他參數)	
-    res.render('important', {userid:req.session.userid, username:req.session.username});
+    res.render('someOthers', {userid:req.session.userid, username:req.session.username});
 });
 
 module.exports = router;
