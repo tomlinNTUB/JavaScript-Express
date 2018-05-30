@@ -16,9 +16,9 @@ router.post('/', function(req, res, next) {
     pool.query('select * from employee where empNo=? and password=?', [userid, password], function(err, rows, fields) {
         if (err || rows.length==0){ //登入失敗
             req.session.loginPass=false;
-            req.session.userid=''; 
-			req.session.username=null; 			            
-			res.render('index', {username:'登入失敗'});  
+            req.session.userid=null; 
+            req.session.username=null; 			            
+            res.render('index', {username:'登入失敗'});  
         }else{	//登入成功
             req.session.loginPass=true;
             req.session.userid=userid; 	
