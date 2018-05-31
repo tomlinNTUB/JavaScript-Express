@@ -39,7 +39,7 @@ router.get('/', function(req, res, next) {
                 //------------------------------------   
                 // 將客戶, 員工, 產品資料一起送出
                 //------------------------------------
-                res.render('exportsForm', {customerItems:customerItems, employeeItems:employeeItems, productItems:productItems});
+                res.render('saleForm', {customerItems:customerItems, employeeItems:employeeItems, productItems:productItems});
             });				
         }); 
     }); 
