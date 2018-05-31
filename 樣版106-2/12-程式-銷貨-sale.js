@@ -76,6 +76,9 @@ router.post('/', function(req, res, next) {
                                     });	
                                 } else {
                                     tot=tot+1;
+                                    //======================
+                                    // 交易成功, Commit
+                                    //======================					
                                     if(tot==proNo.length-1){
                                         connection.commit(function(err) {
                                             if (err) {
@@ -83,10 +86,7 @@ router.post('/', function(req, res, next) {
                                                     connection.release();
                                                     res.render('transactionRollback', {});
                                                 });
-                                            } else {
-                                                //======================
-                                                // 交易成功, Commit
-                                                //======================										
+                                            } else {										
                                                 connection.release();
                                                 res.render('transactionSuccess', {});
                                             }
