@@ -34,9 +34,6 @@ router.post('/', function(req, res, next) {
                     res.render('transactionRollback', {});
                 });
             } else {
-                //增加交易主檔記錄
-				
-                //建立一個主訂單資料物件
                 var newMaster={
                     ordNo:ordNo,
                     cusNo:cusNo,
