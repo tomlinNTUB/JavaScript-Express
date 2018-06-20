@@ -16,3 +16,5 @@ var pool  = mysql.createPool({
 // 引用此模組時將匯出pool物件
 //----------------------------
 module.exports = pool;
+
+
