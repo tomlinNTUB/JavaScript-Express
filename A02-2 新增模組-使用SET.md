@@ -70,7 +70,9 @@ module.exports = query;
 //引用操作資料庫的物件
 const query = require('./asyncDB');
 
-//執行資料庫動作的函式-傳回所有產品資料
+//----------------------------------
+// 新增商品
+//----------------------------------
 var addProduct = async function(newData){
     var result;
 
@@ -83,6 +85,7 @@ var addProduct = async function(newData){
 		
     return result;
 }
+//----------------------------------
 
 //匯出
 module.exports = addProduct;
