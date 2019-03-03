@@ -113,7 +113,7 @@ npm install express-session --save
 var express = require('express');
 var router = express.Router();
 
-//處理GET請求
+//處理GET請求(如接受POST請求再增加宣告)
 router.get('/', function(req, res, next) {
     var sess = req.session;
     sess.userId = '1001';    
@@ -129,7 +129,7 @@ module.exports = router;
 var express = require('express');
 var router = express.Router();
 
-//處理GET請求
+//處理GET請求(如接受POST請求再增加宣告)
 router.get('/', function(req, res, next) {
     var sess = req.session;
     sess.userId = null;    
@@ -145,7 +145,7 @@ module.exports = router;
 var express = require('express');
 var router = express.Router();
 
-//處理GET請求
+//處理GET請求(如接受POST請求再增加宣告)
 router.get('/', function(req, res, next) {
     res.render('protectedPage');
 });
