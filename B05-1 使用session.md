@@ -27,7 +27,6 @@ http://localhost:3000/logout
 ```
  <web>
    |
-   |
    |__ <views>
    |      |__ login.ejs  
    |      |__ logout.ejs   
