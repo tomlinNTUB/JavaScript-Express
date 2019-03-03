@@ -1,4 +1,4 @@
-# B05-1 使用session
+# B05-1 使用session檢查權限
 
 
 ### 測試方式
@@ -114,8 +114,10 @@ var router = express.Router();
 
 //處理GET請求(如接受POST請求再增加宣告)
 router.get('/', function(req, res, next) {
+    //增加一個session註記
     var sess = req.session;
     sess.userId = '1001';    
+    
     res.render('login');
 });
 
@@ -130,8 +132,10 @@ var router = express.Router();
 
 //處理GET請求(如接受POST請求再增加宣告)
 router.get('/', function(req, res, next) {
+    //取消session註記
     var sess = req.session;
     sess.userId = null;    
+    
     res.render('logout');
 });
 
@@ -159,7 +163,9 @@ var router = express.Router();
 
 //處理GET/POST/PUT/DELETE等所有請求
 router.all('/', function(req, res, next) {
+    //檢查是否有session註記
     var sess = req.session;
+    
     if(sess.userId != null){
         next();  
     }else{
