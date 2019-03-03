@@ -161,13 +161,13 @@ module.exports = router;
 var express = require('express');
 var router = express.Router();
 
-//處理GET/POST/PUT/DELETE等所有請求
+//處理GET, POST, PUT, DELETE等所有請求
 router.all('/', function(req, res, next) {
     //檢查是否有session註記
     var sess = req.session;
     
     if(sess.userId != null){
-        next();  
+        next();  //執行在app.use()設定串接於其後的函式 
     }else{
         res.render('unauthorized');
     }    
@@ -205,14 +205,14 @@ app.use(session({secret: '請更改成一個隨機字串用來加密產生的sig
 .
 .
 
-//-----------------------------------------------------------
+//------------------------------------------------------------------------
 // 設定模組使用方式
-// (使用/protectedPage, 先checkAuth, 通過後再protectedPage
-//-----------------------------------------------------------
+// **若使用/protectedPage, 先執行checkAuth, 通過後再執行protectedPage
+//------------------------------------------------------------------------
 app.use('/login', login);
 app.use('/logout', logout);
 app.use('/protectedPage', checkAuth, protectedPage);
-//-----------------------------------------------------------
+//------------------------------------------------------------------------
 
 .
 .
