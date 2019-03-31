@@ -1,3 +1,5 @@
+
+
 DROP TABLE IF EXISTS "public"."orddetails";
 DROP TABLE IF EXISTS "public"."ordmaster";
 DROP TABLE IF EXISTS "public"."product";
@@ -3475,3 +3477,5 @@ ALTER TABLE "public"."orddetails" ADD CONSTRAINT "orddetails_pkey" PRIMARY KEY (
 -- ----------------------------
 ALTER TABLE "public"."orddetails" ADD CONSTRAINT "fk1" FOREIGN KEY ("ordno") REFERENCES "public"."ordmaster" ("ordno") ON DELETE RESTRICT ON UPDATE RESTRICT;
 ALTER TABLE "public"."orddetails" ADD CONSTRAINT "fk2" FOREIGN KEY ("prono") REFERENCES "public"."product" ("prono") ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
