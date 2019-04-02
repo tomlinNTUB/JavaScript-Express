@@ -20,7 +20,7 @@ https://自己的app名稱.herokuapp.com/product/logout
 
 
 ### 執行結果
-![GitHub Logo](/imgs/B05-1.jpg)
+![GitHub Logo](/imgs/C05-1.jpg)
 
 
 ### 網頁樣板
