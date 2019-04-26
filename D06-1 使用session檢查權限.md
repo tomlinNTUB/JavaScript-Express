@@ -1,19 +1,18 @@
 # D06-1 使用session檢查權限
 
 
-### 測試方式
 
-#### 取存受保護頁面
+### 取存受保護頁面
 ```
 自己的網址/product/protectedPage
 ```
 
-#### 登入
+### 登入
 ```
 自己的網址/product/login
 ```
 
-#### 登出
+### 登出
 ```
 自己的網址/product/logout
 ```
