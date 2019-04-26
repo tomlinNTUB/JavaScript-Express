@@ -1,21 +1,21 @@
-# D05-1 使用session檢查權限
+# D06-1 使用session檢查權限
 
 
 ### 測試方式
 
 #### 取存受保護頁面
 ```
-https://自己的app名稱.herokuapp.com/product/protectedPage
+自己的網址/product/protectedPage
 ```
 
 #### 登入
 ```
-https://自己的app名稱.herokuapp.com/product/login
+自己的網址/product/login
 ```
 
 #### 登出
 ```
-https://自己的app名稱.herokuapp.com/product/logout
+自己的網址/product/logout
 ```
 
 
@@ -47,38 +47,12 @@ https://自己的app名稱.herokuapp.com/product/logout
    |__ app.js    
 ```
 
-### 假設
-```
-(1) 已安裝Node.js
-(2) 已安裝Express, npm install express-generator -g
-(3) 已使用Express建立網站(假設網站名稱為web), express web -ejs  
-(4) 已加載PostGreSQL外掛, npm install pg --save
-(5) 已在Heroku建立north-pg資料庫   
-```
 
-### 追加express-session外掛
+### 追加外掛
 ```
 npm install express-session --save
 ```
 
-
-## 上傳至Heroku
-``` 
-(1) (網頁)已下載及安裝Node.js
-(2) 已安裝Heroku CLI, npm install heroku -g
-(3) (網頁)已下載及安裝git CLI
-(4) (網頁)已登入Github
-(5) (網頁)已登入Line Developer
-(6) (網頁)已登入Heroku
-(7) heroku login -i
-(8) git config --global user.email "自己在git的email帳號"
-(9) git init
-(10) heroku git:remote -a [Heroku上的應用程式名稱]
----------------------------------------------------
-(11) git add .
-(12) git commit -am "web"
-(13) git push heroku master -f
-```
 
 ### (1) login.ejs
 
