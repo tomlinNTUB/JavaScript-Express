@@ -13,3 +13,20 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
+
+### (2)
+```
+CREATE OR REPLACE FUNCTION public.myprocedure()
+RETURNS SETOF product
+AS $$
+DECLARE
+    rs RECORD;
+BEGIN
+    FOR rs IN SELECT * FROM product loop
+        IF rs.price > 100 THEN
+            RETURN NEXT rs;
+        END IF;  
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+```
