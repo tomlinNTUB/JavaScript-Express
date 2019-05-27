@@ -3,13 +3,13 @@
 
 ### (1)
 ```
-CREATE OR REPLACE FUNCTION totalRecords ()
-RETURNS integer AS $total$
+CREATE OR REPLACE FUNCTION totalRecords()
+RETURNS integer AS $$
 DECLARE
     total integer;
 BEGIN
     SELECT count(*) into total FROM customer;
     RETURN total;
 END;
-$total$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql;
 ```
