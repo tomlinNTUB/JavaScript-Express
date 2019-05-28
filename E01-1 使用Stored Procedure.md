@@ -56,3 +56,29 @@ LANGUAGE plpgsql;;
 ```
 select * from proc3()
 ```
+
+
+### (4)
+```
+CREATE OR REPLACE FUNCTION proc4()
+ RETURNS integer
+ LANGUAGE plpgsql
+AS $$
+	declare 
+		cur cursor for select * from product where price>100;		
+	    tot integer;
+	BEGIN		 
+		tot:=0;
+	
+		for currentRow in cur loop
+			tot := tot + currentRow.price;
+	    end loop;
+	   
+	    return tot;
+	END;
+$$;
+```
+
+```
+select proc4()
+```
