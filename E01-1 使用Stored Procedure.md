@@ -3,7 +3,7 @@
 
 ### (1)
 ```
-CREATE OR REPLACE FUNCTION totalRecords()
+CREATE OR REPLACE FUNCTION proc1()
 RETURNS integer AS $$
 DECLARE
     total integer;
@@ -16,7 +16,7 @@ $$ LANGUAGE plpgsql;
 
 ### (2)
 ```
-CREATE OR REPLACE FUNCTION public.myprocedure()
+CREATE OR REPLACE FUNCTION proc2()
 RETURNS SETOF product
 AS $$
 DECLARE
@@ -29,4 +29,20 @@ BEGIN
     END LOOP;
 END;
 $$ LANGUAGE plpgsql;
+```
+
+
+### (3)
+```
+CREATE OR REPLACE FUNCTION proc3(
+   OUT procnt NUMERIC,
+   OUT empcnt NUMERIC)
+AS $$
+
+BEGIN
+   select count(*) into procnt from product;
+   select count(*) into empcnt from employee;
+END; $$
+ 
+LANGUAGE plpgsql;;
 ```
