@@ -15,7 +15,7 @@ $$ LANGUAGE plpgsql;
 ```
 
 ```
-select proc3()
+select proc1()
 ```
 
 ### (2)
