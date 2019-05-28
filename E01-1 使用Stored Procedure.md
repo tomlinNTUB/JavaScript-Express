@@ -14,6 +14,10 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
+```
+select proc3()
+```
+
 ### (2)
 ```
 CREATE OR REPLACE FUNCTION proc2()
@@ -30,7 +34,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-
+```
+select proc2()
+```
 
 ### (3)
 ```
@@ -45,4 +51,8 @@ BEGIN
 END; $$
  
 LANGUAGE plpgsql;;
+```
+
+```
+select * from proc3()
 ```
