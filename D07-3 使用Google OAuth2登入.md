@@ -1,13 +1,13 @@
 # D07-3 使用Google OAuth2登入
 
 
-### 執行結果
+### (1) 登入Google cloud platform, https://console.developers.google.com/
 ![GitHub Logo](/imgs/A-01.jpg)
 
-### 執行結果
+### (2) 建立OAuth用戶端ID
 ![GitHub Logo](/imgs/A-02.jpg)
 
-### 執行結果
+### (3) 得到用戶端ID及用戶端密碼
 ![GitHub Logo](/imgs/A-03.jpg)
 
 
