@@ -52,8 +52,8 @@ var GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 passport.use(
     new GoogleStrategy({
-        clientID: '請填入自己的GOOGLE_CLIENT_ID', 
-        clientSecret: '請填入自己的GOOGLE_CLIENT_SECRET',
+        clientID: '請填入自己的用戶端ID', 
+        clientSecret: '請填入自己的用戶端密碼',
         callbackURL: "請填入自己的callbackURL, http://..../auth/google/callback"
     },
     function(accessToken, refreshToken, profile, done) {
