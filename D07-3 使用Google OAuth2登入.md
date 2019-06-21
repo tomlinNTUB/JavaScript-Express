@@ -27,7 +27,8 @@ var users = require('./routes/users');
 var app = express();
 
 //---------------------------------------------
-// 使用session
+// 使用passport-google-oauth2套件進行認證
+//---------------------------------------------
 var passport = require('passport');
 
 app.use(require('express-session')({
@@ -47,23 +48,19 @@ passport.deserializeUser(function(user, done) {
     done(null, user);
 });
 
-// 載入google oauth2
+//載入google oauth2
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
 
+//填入自己在google cloud platform建立的憑證
 passport.use(
     new GoogleStrategy({
         clientID: '請填入自己的用戶端ID', 
         clientSecret: '請填入自己的用戶端密碼',
-        callbackURL: "請填入自己的callbackURL, http://..../auth/google/callback"
+        callbackURL: "請填入自己的callbackURL, 如:http://105***.ntub.edu.tw/auth/google/callback, 作為認證後的呼叫方法"
     },
     function(accessToken, refreshToken, profile, done) {
         if (profile) {
-            user = profile;
-            console.log('處理使用者資訊');
-            console.log('***********');        
-            console.log(user);
-            console.log('***********');
-            return done(null, user);
+            return done(null, profile);
         }else {
             return done(null, false);
         }
@@ -88,13 +85,23 @@ app.use('/users', users);
 
 //---------------------------------------------
 app.get('/user/login',
-    passport.authenticate('google', { scope: ['email', 'profile'] }));
+    passport.authenticate('google', { scope: ['email', 'profile'] }));   //進行google第三方認證
 
 app.get('/auth/google/callback', 
-    passport.authenticate('google', { failureRedirect: '/login' }),   //如果登入失敗, 導向某頁面	
+    passport.authenticate('google', { failureRedirect: '/login' }),   //導向登入失敗頁面	
     function(req, res) {
-        res.redirect('/');   //如果登入成功, 導向某頁面	
+        // 如果登入成功, 使用者資料已存在session
+        console.log(req.session.passport.user.id);
+        console.log(req.session.passport.user.displayName);
+        console.log(req.session.passport.user.emails[0].value);	    
+        
+        res.redirect('/');   //導向登入成功頁面
     });
+
+app.get('/user/logout', function(req, res){    
+    req.logout();        //將使用者資料從session移除
+    res.redirect('/');   //導向登出頁面
+});    
 //---------------------------------------------
  
 
