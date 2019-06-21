@@ -84,6 +84,8 @@ app.use('/', index);
 app.use('/users', users);
 
 //---------------------------------------------
+// 設定登入及登出方法內容
+//---------------------------------------------
 app.get('/user/login',
     passport.authenticate('google', { scope: ['email', 'profile'] }));   //進行google第三方認證
 
