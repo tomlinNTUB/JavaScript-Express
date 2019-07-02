@@ -1,5 +1,9 @@
 # D07-3 使用Google OAuth2登入
 
+```
+npm install passport --save
+npm install passport-google-oauth20 --save
+```
 
 ### (1) 登入Google cloud platform, https://console.developers.google.com/
 ![GitHub Logo](/imgs/A-01.jpg)
