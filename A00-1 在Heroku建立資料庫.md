@@ -14,7 +14,7 @@ https://www.heroku.com/
 ![GitHub Logo](/imgs/h2.png)
 
 
-### (3) 填寫基本通過, 打開剛才填寫的郵件信箱
+### (3) 通過基本資料檢查, 打開剛才填寫的郵件信箱
 
 ![GitHub Logo](/imgs/h3.png)
 
