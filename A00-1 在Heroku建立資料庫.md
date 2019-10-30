@@ -2,24 +2,24 @@
 
 ## 1. 在Heroku平台申請帳號
 
-#### (1) 開啟Heroku平台
+### (1) 開啟Heroku平台
 
 ```
 https://www.heroku.com/
 ```
 ![GitHub Logo](/imgs/h1.png)
 
-#### (2) 申請帳號
+### (2) 申請帳號, 填寫基本資料
 
 ![GitHub Logo](/imgs/h2.png)
 
 
-#### (3) 填寫資料
+### (3) 填寫基本通過, 打開剛才填寫的郵件信箱
 
 ![GitHub Logo](/imgs/h3.png)
 
 
-#### (4) 檢查郵件, 填寫密碼
+### (4) 打開郵件內連結, 填寫密碼
 
 ![GitHub Logo](/imgs/h4.png)
 
