@@ -5,9 +5,9 @@
 (1) (網頁)下載及安裝 Node.js
 (2) 安裝Heroku CLI, 
     npm install heroku -g
-(3) (網頁https://git-scm.com/downloads)已下載及安裝git CLI
-(4) (網頁)已登入Github
-(5) (網頁)已登入Heroku
+(3) (網頁https://git-scm.com/downloads)下載及安裝git CLI
+(4) (網頁)登入Github
+(5) (網頁)登入Heroku
 ```
 
 #### 2. 前置作業 (假設程式在D:\web中)
