@@ -2,8 +2,8 @@
 
 #### 1. 前置作業
 ``` html
-(1) (網頁)已下載及安裝 Node.js
-(2) 已安裝Heroku CLI, 
+(1) (網頁)下載及安裝 Node.js
+(2) 安裝Heroku CLI, 
     npm install heroku -g
 (3) (網頁https://git-scm.com/downloads)已下載及安裝git CLI
 (4) (網頁)已登入Github
