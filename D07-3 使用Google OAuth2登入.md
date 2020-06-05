@@ -10,6 +10,12 @@ npm install express-session --save
 ![GitHub Logo](/imgs/A-01.jpg)
 
 ### (2) 建立OAuth用戶端ID
+```
+註: (1) 以下「已授櫂的JavaScript來源」可以不填;
+    (2) 以下「已授櫂的重新導向URI」, 如果網站將上傳至Heroku, 可以寫成:
+        https://[Heroku上的應用程式名稱].herokuapp.com/auth/google/callback
+```
+
 ![GitHub Logo](/imgs/A-02.jpg)
 
 ### (3) 得到用戶端ID及用戶端密碼
