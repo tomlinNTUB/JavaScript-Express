@@ -3,6 +3,7 @@
 ```
 npm install passport --save
 npm install passport-google-oauth20 --save
+npm install express-session --save
 ```
 
 ### (1) 登入Google cloud platform, https://console.developers.google.com/
