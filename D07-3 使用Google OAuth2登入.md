@@ -20,9 +20,6 @@ npm install express-session --save
 ```
  <web>
    |
-   |__ <views>
-   |      |__ unAuth.ejs    (由網頁樣板的index.html複製並修改)   
-   |
    |__ <routes>
    |      |__ checkAuth.js  (自行增加)    
    |
@@ -39,7 +36,7 @@ var router = express.Router();
 //處理GET, POST, PUT, DELETE等所有請求
 router.all('/', function(req, res, next) {
     //檢查是否有session註記
-    var id = null;
+    var id;
 
     try{
         id = req.session.passport.user.id;
@@ -48,7 +45,7 @@ router.all('/', function(req, res, next) {
     }
 
     if(id===null || id===undefined){
-        res.render('unAuth');  //導向無權限畫面        
+        res.redirect('/user/login');  //導向登入畫面        
     }else{
         next();  //執行在app.use()中, 串接在checkAuth之後的函式 
     }    
@@ -58,21 +55,8 @@ module.exports = router;
 ```
 
 
-### (2) unAuth.ejs
-``` html
-.
-. (增加以下顯示)
-.
 
-
-<h2>尚未登入, 無使用權利!</h2> 
-
-.
-.
-.
-```
-
-### (3) app.js
+### (2) app.js
 
 ``` js
 var express = require('express');
