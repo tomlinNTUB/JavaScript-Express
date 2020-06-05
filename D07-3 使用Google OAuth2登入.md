@@ -39,8 +39,14 @@ var router = express.Router();
 //處理GET, POST, PUT, DELETE等所有請求
 router.all('/', function(req, res, next) {
     //檢查是否有session註記
-    var id = req.session.passport.user.id;
-    
+    var id = null;
+
+    try{
+        id = req.session.passport.user.id;
+    }catch(err){
+        id = null;        
+    }
+
     if(id===null || id===undefined){
         res.render('unAuth');  //導向無權限畫面        
     }else{
