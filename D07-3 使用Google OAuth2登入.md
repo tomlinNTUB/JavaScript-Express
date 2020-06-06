@@ -177,20 +177,20 @@ app.get('/user/logout', function(req, res){
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
 
 module.exports = app;
@@ -217,12 +217,21 @@ var checkAuth = require('./routes/checkAuth');
 //------------------------------------------------------------------------
 // 設定要先登入才能使用的服務:
 //
-// (1) 假設「產品新增」是登入後才能使用的服務, 它的呼叫方式是「/product/add」;
+// (1) 假設「產品新增」是登入後才能使用的服務, 
+//     假設它的呼叫方式是「/product/add」;
 //
-// (2) 假設原本使用方式是: app.use('/product/add', product_add);
-//                請改成: app.use('/product/add', checkAuth, product_add);
+// (2) 假設原本使用方式是: 
+//     app.use('/product/add', product_add);
+//
+//     請改成: 
+//     app.use('/product/add', checkAuth, product_add);
 //------------------------------------------------------------------------
 .
 .
 .
 ```
+
+### (5) 請注意, 執行網站的「使用者登出」後, 檢查「瀏覽器」是否仍存有使用者的Google登入.
+
+
+ 
