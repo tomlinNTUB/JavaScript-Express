@@ -124,7 +124,7 @@ passport.use(
     new GoogleStrategy({
         clientID: '請填入自己的用戶端ID', 
         clientSecret: '請填入自己的用戶端密碼',
-        callbackURL: "請填入自己的callbackURL, 如:http://105***.ntub.edu.tw/auth/google/callback, 作為認證後的呼叫方法"
+        callbackURL: "請填入自己的callbackURL, 如:https://[Heroku上的應用程式名稱].herokuapp.com/auth/google/callback, 作為認證後的呼叫方法"
     },
     function(accessToken, refreshToken, profile, done) {
         if (profile) {
