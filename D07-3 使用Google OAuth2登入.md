@@ -8,7 +8,7 @@ npm install express-session --save
 
 ### (1) 登入Google cloud platform, https://console.developers.google.com/
 ```
-註: 以下選擇「建立OAuth用戶端ID」後, 會再選擇「應用程式類型」,
+註: 以下選擇「建立OAuth用戶端ID」後, 會再被要求選擇「應用程式類型」,
     此時選擇「網頁應用程式」.
 ```
 
