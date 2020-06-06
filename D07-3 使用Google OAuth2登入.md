@@ -8,8 +8,7 @@ npm install express-session --save
 
 ### (1) 登入Google cloud platform, https://console.developers.google.com/
 ```
-註: 以下選擇「建立OAuth用戶端ID」後, 會再被要求選擇「應用程式類型」,
-    此時選擇「網頁應用程式」.
+註: 以下選擇「建立OAuth用戶端ID」後, 會再被要求選擇「應用程式類型」, 此時選擇「網頁應用程式」.
 ```
 
 ![GitHub Logo](/imgs/A-01.jpg)
@@ -17,6 +16,7 @@ npm install express-session --save
 ### (2) 建立OAuth用戶端ID
 ```
 註: (1) 以下「已授櫂的JavaScript來源」可以不填;
+
     (2) 以下「已授櫂的重新導向URI」, 如果網站將上傳至Heroku, 可以寫成:
         https://[Heroku上的應用程式名稱].herokuapp.com/auth/google/callback
 ```
