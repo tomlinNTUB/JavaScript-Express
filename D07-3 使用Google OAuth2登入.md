@@ -170,6 +170,11 @@ app.get('/auth/google/callback',
 
 app.get('/user/logout', function(req, res){    
     req.logout();        //將使用者資料從session移除
+    
+    try{
+        req.session.passport.user.id = null;       
+    }catch(e){}
+    
     res.redirect('/');   //導向登出頁面
 });    
 //---------------------------------------------
