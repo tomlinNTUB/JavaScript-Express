@@ -7,6 +7,11 @@ npm install express-session --save
 ```
 
 ### (1) 登入Google cloud platform, https://console.developers.google.com/
+```
+註: 以下選擇「建立OAuth用戶端ID」後, 會再選擇「應用程式類型」,
+    此時選擇「網頁應用程式」.
+```
+
 ![GitHub Logo](/imgs/A-01.jpg)
 
 ### (2) 建立OAuth用戶端ID
@@ -26,14 +31,26 @@ npm install express-session --save
 ```
  <web>
    |
+   |__ <views>
+   |      |__ index.ejs     (修改)
+   |
    |__ <routes>
    |      |__ checkAuth.js  (自行增加)    
    |
    |__ app.js   (修改)  
 ```
 
+### (1) 修改index.ejs
 
-### (1) checkAuth.js
+```
+將其中的:
+<li><a href="/user/login/form">登入</a></li>
+
+改成:
+<li><a href="/user/login">登入</a></li>
+```
+
+### (2) checkAuth.js
 
 ``` js
 var express = require('express');
@@ -62,7 +79,7 @@ module.exports = router;
 
 
 
-### (2) app.js
+### (3) app.js
 
 ``` js
 var express = require('express');
