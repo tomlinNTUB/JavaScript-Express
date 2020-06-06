@@ -236,7 +236,4 @@ var checkAuth = require('./routes/checkAuth');
 .
 ```
 
-### (5) 請注意, 執行網站的「使用者登出」後, 檢查「瀏覽器」是否仍存有使用者的Google登入.
-
-
  
